@@ -150,11 +150,11 @@ In Codex, `AGENTS.md` at the project root is the primary behavioral instruction 
 
 ## Comparison to Other Platforms
 
-| Feature | Codex | Cursor | Claude Code | Gemini | MiMo-Code |
+| Feature | Codex | Cursor | Claude Code | Gemini | OpenCode |
 |---------|-------|--------|-------------|--------|----------|
 | Rules | via AGENTS.md | `.mdc` files | `.md` files | `.md` files | `.md` files |
 | Commands | via AGENTS.md | `@g-*` | `/g-*` | `/g-*` | `/g-*` |
 | Agents | `config.toml` | `agents/` | `agents/` | `workflows/` | `agents/` |
 | Hooks | ❌ None | ✅ Full | ✅ Full | ✅ Full | ❌ None |
 | Skills | ✅ (explicit) | ✅ (auto) | ✅ (auto) | ✅ (auto) | via AGENTS.md |
-| Config file | `config.toml` | `hooks.json` + `mcp.json` | `settings.json` + `hooks.json` | `mcp_config.json` | `mimocode.json` |
+| Config file | `config.toml` | `hooks.json` + `mcp.json` | `settings.json` + `hooks.json` | `mcp_config.json` | `opencode.json` |

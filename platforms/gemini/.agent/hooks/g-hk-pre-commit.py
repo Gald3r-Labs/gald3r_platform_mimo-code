@@ -44,7 +44,7 @@ PROTECTED_PATTERNS = [
     r"^\.claude/",
     r"^\.codex/",
     r"^\.cursor/",
-    r"^\.mimocode/",
+    r"^\.opencode/",
     r"^\.copilot/",
     r"^\.gald3r/",
     r"^\.project_template/",

@@ -56,7 +56,7 @@ Search these paths for the `--from` pattern:
 .cursor/skills/        .claude/skills/
 .agent/commands/       .agent/skills/
 .codex/commands/       .codex/skills/
-.mimocode/commands/    .mimocode/skills/
+.opencode/commands/    .opencode/skills/
 .copilot/commands/
 src/                   scripts/
 *.md (root level)      AGENTS.md  CLAUDE.md
@@ -178,4 +178,4 @@ This command must exist in all 5 IDE platform command directories:
 - `.claude/commands/g-migrate.md`
 - `.agent/commands/g-migrate.md`
 - `.codex/commands/g-migrate.md`
-- `.mimocode/commands/g-migrate.md`
+- `.opencode/commands/g-migrate.md`

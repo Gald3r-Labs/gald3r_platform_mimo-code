@@ -8,8 +8,8 @@ subsystem_memberships: [PLATFORM_INTEGRATION]
 # g-skl-cli-codex — OpenAI Codex CLI
 
 > **Note**: This skill covers the **OpenAI Codex CLI** (`codex` binary from `@openai/codex` npm package).
-> This is a different product from the old OpenAI Codex API model (deprecated 2023) and from MiMo-Code (`mimocode` binary).
-> See `g-skl-cli-opencode` for the MiMo-Code CLI.
+> This is a different product from the old OpenAI Codex API model (deprecated 2023) and from OpenCode (`opencode` binary).
+> See `g-skl-cli-opencode` for the OpenCode CLI.
 
 Reference docs will live in: `{vault_location}/research/platforms/codex/` once populated via `@g-ingest-docs`.
 

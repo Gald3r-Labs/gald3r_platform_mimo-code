@@ -113,7 +113,7 @@ of subdirectory files.
   with YAML frontmatter (`name`, `description`) plus markdown instructions.
 - **Discovery dirs** (project-scoped and `~/` global equivalents): `.agents/skills/`, `.warp/skills/`,
   **`.claude/skills/`**, `.codex/skills/`, `.cursor/skills/`, `.gemini/skills/`, `.copilot/skills/`,
-  `.factory/skills/`, `.github/skills/`, `.mimocode/skills/`. **Cross-vendor `SKILL.md`
+  `.factory/skills/`, `.github/skills/`, `.opencode/skills/`. **Cross-vendor `SKILL.md`
   interoperability is explicit.**
 - gald3r `g-skl-*/SKILL.md` load natively — including straight from `.claude/skills/` — so the
   Claude-Code skill tree is reusable on Warp with no Warp-specific port.
@@ -283,7 +283,7 @@ Legend: ✅ verified working · ⚠️ partial / Cursor-generic · ❌ not suppo
 |---|---|
 | Instruction file | /agent-platform/capabilities/rules/ — `AGENTS.md` default + legacy `WARP.md` (ALL-CAPS, `WARP.md` wins if both); auto-applied root + current dir, best-effort subdirs |
 | Rules | /agent-platform/capabilities/rules/ — Global Rules + Project Rules (`AGENTS.md`/`WARP.md`); plus Agent Memory (Research Preview) cross-harness persistent memory |
-| Skills | /agent-platform/capabilities/skills/ — `SKILL.md` (name/description frontmatter); discovers `.agents/.warp/.claude/.codex/.cursor/.gemini/.copilot/.factory/.github/.mimocode` skills dirs (+ `~/`); cross-vendor; page updated 2026-05-28 |
+| Skills | /agent-platform/capabilities/skills/ — `SKILL.md` (name/description frontmatter); discovers `.agents/.warp/.claude/.codex/.cursor/.gemini/.copilot/.factory/.github/.opencode` skills dirs (+ `~/`); cross-vendor; page updated 2026-05-28 |
 | Agents | /agent-platform/capabilities/agent-profiles-permissions/ — named profiles (base model, autonomy, tool/MCP allow-deny); Oz subagent orchestration (parallel; Claude Code + Codex harnesses) |
 | Commands | /agent-platform/capabilities/slash-commands — built-in `/agent /plan /skills /fork /model` + Warp Drive Agent Prompts; **no custom slash-command syntax** (open RFC #6857); Workflows are closest user-authorable primitive |
 | Hooks | github.com/warpdotdev/warp/issues/7834 — no Hooks capability page; agent lifecycle hooks (#7834) + hook-like mechanisms (#6857) both Open, no commitment; `claude-code-warp` reuses Claude Code's `hooks.json` |

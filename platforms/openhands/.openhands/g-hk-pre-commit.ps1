@@ -183,7 +183,7 @@ $protectedPatterns = @(
     '^\.claude/'
     '^\.codex/'
     '^\.cursor/'
-    '^\.mimocode/'
+    '^\.opencode/'
     '^\.copilot/'
     '^\.gald3r/'
     '^\.project_template/'

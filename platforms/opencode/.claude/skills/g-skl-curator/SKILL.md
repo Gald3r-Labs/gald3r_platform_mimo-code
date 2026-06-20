@@ -45,7 +45,7 @@ counter-force.
 **Safety boundary** (mandatory):
 
 - File operations only: read and write under `.cursor/skills/`, `.claude/skills/`,
-  `.agent/skills/`, `.codex/skills/`, `.mimocode/skills/`, and write reports to
+  `.agent/skills/`, `.codex/skills/`, `.opencode/skills/`, and write reports to
   `.gald3r/reports/`.
 - No `Shell`, no `Bash`, no `PowerShell`, no `Edit` of skill bodies.
 - No web fetch, no MCP calls.
@@ -82,7 +82,7 @@ directories:
 .claude/skills/*/SKILL.md
 .agent/skills/*/SKILL.md
 .codex/skills/*/SKILL.md
-.mimocode/skills/*/SKILL.md
+.opencode/skills/*/SKILL.md
 ```
 
 Skills present in multiple platforms (gald3r-owned `g-skl-*` skills are mirrored across
@@ -207,7 +207,7 @@ Historical reports accumulate across days. The format is:
 
 ## Drift Findings
 
-(skills whose content differs across .cursor / .claude / .agent / .codex / .mimocode copies)
+(skills whose content differs across .cursor / .claude / .agent / .codex / .opencode copies)
 
 ## Protected Skills
 
@@ -218,7 +218,7 @@ Historical reports accumulate across days. The format is:
 - run_started: ISO-8601
 - run_completed: ISO-8601
 - skills_enumerated: N
-- platforms_scanned: [.cursor, .claude, .agent, .codex, .mimocode]
+- platforms_scanned: [.cursor, .claude, .agent, .codex, .opencode]
 - protected_list_path: .gald3r/config/CURATOR_PROTECTED_SKILLS.md
 - protected_list_count: P
 ```
@@ -254,7 +254,7 @@ task) or by editing the audit log to record the decision.
 The `@g-curator` slash command is the manual entry point. The command file is mirrored
 across all five IDE platforms (`.cursor/commands/g-curator.md`,
 `.claude/commands/g-curator.md`, `.agent/commands/g-curator.md`,
-`.codex/commands/g-curator.md`, `.mimocode/commands/g-curator.md`) so any IDE can
+`.codex/commands/g-curator.md`, `.opencode/commands/g-curator.md`) so any IDE can
 invoke it. See the command file for argument details.
 
 ---

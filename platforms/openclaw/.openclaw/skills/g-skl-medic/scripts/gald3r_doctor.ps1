@@ -301,7 +301,7 @@ function Test-Platform {
         '.claude'   = '.claude/'
         '.agent'    = '.agent/'
         '.codex'    = '.codex/'
-        '.mimocode' = '.mimocode/'
+        '.opencode' = '.opencode/'
     }
 
     foreach ($kv in $platforms.GetEnumerator()) {

@@ -76,7 +76,7 @@ printed warning. Additive to the Housekeeping Commit Gate. **Full authoritative 
 Before any bug claiming or implementation, run the re-callable inbox check if WPAC is configured:
 
 ```powershell
-$hook = @( ".cursor\hooks\g-hk-wpac-inbox-check.ps1", ".claude\hooks\g-hk-wpac-inbox-check.ps1", ".agent\hooks\g-hk-wpac-inbox-check.ps1", ".codex\hooks\g-hk-wpac-inbox-check.ps1", ".mimocode\hooks\g-hk-wpac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
+$hook = @( ".cursor\hooks\g-hk-wpac-inbox-check.ps1", ".claude\hooks\g-hk-wpac-inbox-check.ps1", ".agent\hooks\g-hk-wpac-inbox-check.ps1", ".codex\hooks\g-hk-wpac-inbox-check.ps1", ".opencode\hooks\g-hk-wpac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
 if ($hook) { powershell -NoProfile -ExecutionPolicy Bypass -File $hook -ProjectRoot . -BlockOnConflict }
 ```
 

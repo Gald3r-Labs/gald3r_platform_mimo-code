@@ -12,7 +12,7 @@ subsystem_memberships: [PLATFORM_INTEGRATION]
 
 ## Purpose
 
-Crawl AI platform documentation sites (Anthropic, OpenAI, Google Gemini, MiMo-Code, Cursor) and write Obsidian-compatible vault notes to `research/platforms/{platform-name}/`. This skill uses **crawl4ai only** via `g-skl-crawl` for both one-off refreshes and bulk documentation crawls.
+Crawl AI platform documentation sites (Anthropic, OpenAI, Google Gemini, OpenCode, Cursor) and write Obsidian-compatible vault notes to `research/platforms/{platform-name}/`. This skill uses **crawl4ai only** via `g-skl-crawl` for both one-off refreshes and bulk documentation crawls.
 
 If a workflow needs web extraction, route it through `g-skl-crawl`, `g-skl-recon-docs`, `g-skl-recon-url`, or the crawl4ai-backed MCP URL/platform-doc tools.
 
@@ -95,7 +95,7 @@ This creates/updates `_INDEX.md` with `[[wikilinks]]` to all notes, forming the 
 | OpenAI | `research/platforms/openai/` | platform.openai.com |
 | Google Gemini | `research/platforms/gemini/` | ai.google.dev |
 | Cursor | `research/platforms/cursor/` | docs.cursor.com |
-| MiMo-Code | `research/platforms/mimocode/` | mimo.xiaomi.com/mimocode/docs |
+| OpenCode | `research/platforms/opencode/` | opencode.ai/docs |
 
 ---
 

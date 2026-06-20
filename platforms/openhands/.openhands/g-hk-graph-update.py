@@ -28,7 +28,7 @@ import _hook_common  # noqa: F401  (shared bootstrap; pure-stdlib path used here
 def _default_project_root() -> str:
     """Mirror the PS1 default: strip the trailing IDE hooks dir (T1159) so the
     same script body works under .cursor/, .claude/, .agent/, .codex/, or
-    .mimocode/."""
+    .opencode/."""
     script_dir = str(Path(__file__).resolve().parent)
     return re.sub(
         r"[\\/]\.(cursor|claude|agent|codex|opencode)[\\/]hooks$", "", script_dir

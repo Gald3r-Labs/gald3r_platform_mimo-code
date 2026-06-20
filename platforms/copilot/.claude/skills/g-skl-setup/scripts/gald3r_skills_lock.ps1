@@ -74,7 +74,7 @@ $ErrorActionPreference = 'Stop'
 $LOCK_VERSION = 1
 
 # Platform skill directories to scan (in install priority order)
-$PLATFORM_DIRS = @('.cursor/skills', '.claude/skills', '.agent/skills', '.codex/skills', '.mimocode/skills')
+$PLATFORM_DIRS = @('.cursor/skills', '.claude/skills', '.agent/skills', '.codex/skills', '.opencode/skills')
 
 function Get-Gald3rVersion {
     param([string]$Root)

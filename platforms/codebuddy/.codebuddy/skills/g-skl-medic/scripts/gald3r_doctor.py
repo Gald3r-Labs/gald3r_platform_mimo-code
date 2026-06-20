@@ -367,7 +367,7 @@ class Doctor:
             (".claude", ".claude/"),
             (".agent", ".agent/"),
             (".codex", ".codex/"),
-            (".mimocode", ".mimocode/"),
+            (".opencode", ".opencode/"),
         ]
 
         for key, label in platforms:

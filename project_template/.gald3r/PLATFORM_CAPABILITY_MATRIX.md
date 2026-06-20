@@ -32,7 +32,7 @@ Legend: ✅ verified · ⚠️ partial · ❌ not supported · ❓ untested.
 | kiro_cli | ✅ | ✅ | ✅ | ✅ | ✅ | MCP (L2) | — |
 | mistral | ⚠ | ⚠ | ✅ | ⚠ | ✅ | MCP (L2) | rules.md |
 | openclaw | ✅ | ✅ | ✅ | ✅ | ✅ | MCP (L2) | .md |
-| mimocode | ✅ | ✅ | ✅ | ✅ | ✅ | MCP (L2) | .md |
+| opencode | ✅ | ✅ | ✅ | ✅ | ✅ | MCP (L2) | .md |
 | openhands | ✅ | ✅ | ✅ | ✅ | ✅ | MCP (L2) | .md |
 | qoder | ✅ | ✅ | ✅ | ✅ | ✅ | MCP (L2) | .md |
 | qwen | ✅ | ✅ | ✅ | ✅ | ✅ | MCP (L2) | .md |

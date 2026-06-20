@@ -6,7 +6,7 @@ This directory is the gald3r deploy scaffold for **Agent Skills cross-client sta
 `.gald3r_sys/_platform_capabilities.json` and recognised by the platform-parity
 sync tooling.
 
-Cross-client Agent Skills auto-discovery standard. See `g-skl-platform-claude` and `g-skl-platform-opencode` for the Claude/MiMo-Code compatibility layer.
+Cross-client Agent Skills auto-discovery standard. See `g-skl-platform-claude` and `g-skl-platform-opencode` for the Claude/OpenCode compatibility layer.
 
 > **Status (T1207 → T1277):** the platform skill and capabilities-registry entry
 > are in place. The full per-platform deploy payload (instructions guide + config

@@ -10,7 +10,7 @@
     The script:
       1. Walks .cursor/skills/g-skl-* for SKILL.md files
       2. Parses frontmatter `name:` and `description:` (handles plain and folded `>-` forms)
-      3. Emits SKILL_INDEX.md to .cursor/, .claude/, .agent/, .codex/, .mimocode/ skill folders
+      3. Emits SKILL_INDEX.md to .cursor/, .claude/, .agent/, .codex/, .opencode/ skill folders
       4. Is idempotent — re-running on unchanged input yields unchanged output
 
     .copilot/ has commands only (no skills folder) and is excluded by design — this is a
@@ -53,7 +53,7 @@ $targets = @(
     (Join-Path $RepoRoot '.claude/skills'),
     (Join-Path $RepoRoot '.agent/skills'),
     (Join-Path $RepoRoot '.codex/skills'),
-    (Join-Path $RepoRoot '.mimocode/skills')
+    (Join-Path $RepoRoot '.opencode/skills')
 )
 
 function Get-SkillFrontmatter {

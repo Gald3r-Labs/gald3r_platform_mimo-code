@@ -23,7 +23,7 @@
 param(
     # T1159: regex matches any of the 5 IDE hook directories so the same
     # script body works when installed under .cursor/, .claude/, .agent/,
-    # .codex/, or .mimocode/.
+    # .codex/, or .opencode/.
     [string]$ProjectRoot = $PSScriptRoot -replace '[\\/]\.(cursor|claude|agent|codex|opencode)[\\/]hooks$', ''
 )
 

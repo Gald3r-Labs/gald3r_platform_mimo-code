@@ -137,7 +137,7 @@ Read `vault_location=` from `.gald3r/.identity`:
 
 **AC6 — Platform targets check**
 
-Verify directory presence for: `.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.mimocode/`, `.copilot/`
+Verify directory presence for: `.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.opencode/`, `.copilot/`
 
 For `.cursor/` and `.claude/` (primary surfaces), also verify `commands/` and `skills/` subdirectories
 and report file counts.
@@ -152,7 +152,7 @@ Missing platforms → `⚠️ WARN` with fix suggestion (not `❌ FAIL`).
 
 Scan all canonical SKILL.md files under `.claude/skills/` and `.gald3r_sys/skill_packs/`,
 plus the IDE mirrors `.cursor/skills/`, `.claude/skills/`, `.codex/skills/`,
-`.mimocode/skills/`, `.agent/skills/`. For each SKILL.md, read the YAML frontmatter
+`.opencode/skills/`, `.agent/skills/`. For each SKILL.md, read the YAML frontmatter
 and check for the `token_budget:` field.
 
 ```

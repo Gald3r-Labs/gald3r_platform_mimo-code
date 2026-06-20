@@ -68,7 +68,7 @@ LOCK_VERSION = 1
 
 # Platform skill directories to scan (in install priority order)
 PLATFORM_DIRS = (".cursor/skills", ".claude/skills", ".agent/skills",
-                 ".codex/skills", ".mimocode/skills")
+                 ".codex/skills", ".opencode/skills")
 
 
 def _supports_color(stream: TextIO) -> bool:

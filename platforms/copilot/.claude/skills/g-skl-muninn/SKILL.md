@@ -163,7 +163,7 @@ This skill lives in (canonical + IDE mirrors):
 - `.claude/skills/g-skl-muninn/SKILL.md`
 - `.agent/skills/g-skl-muninn/SKILL.md`
 - `.codex/skills/g-skl-muninn/SKILL.md`
-- `.mimocode/skills/g-skl-muninn/SKILL.md`
+- `.opencode/skills/g-skl-muninn/SKILL.md`
 
 MCP entry under key `"gald3r_muninn"` in `.mcp.json` documents the migration —
 actual transport is the existing `example_app` HTTP endpoint.

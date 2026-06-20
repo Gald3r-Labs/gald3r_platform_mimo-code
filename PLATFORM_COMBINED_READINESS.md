@@ -153,7 +153,7 @@
 - **Gaps:** none — native across the board
 - **Engine lift:** every layer native — the engine consolidates (one core, not N copies).
 - **Beyond the guest layer:** → gald3r_agent (the native build).
-### mimocode — ✅ Full · Engine: MCP (L2)
+### opencode — ✅ Full · Engine: MCP (L2)
 `C ✅ · R ✅ · A ✅ · S ✅ · H ✅ · MCP ✅` · rules `.md`
 
 - **Gaps:** none — native across the board

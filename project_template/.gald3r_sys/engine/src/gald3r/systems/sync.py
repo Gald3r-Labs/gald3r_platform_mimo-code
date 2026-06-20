@@ -26,7 +26,7 @@ SOURCE_HOOK_DROP = ("claude-chat-logger",)       # source-platform-specific hook
 ADAPTERS: Dict[str, Dict[str, Any]] = {
     "cursor":   {"dir": ".cursor",   "rules_ext": ".mdc"},
     "gemini":   {"dir": ".gemini",   "rules_ext": ".md"},
-    "mimocode": {"dir": ".mimocode", "rules_ext": ".md"},
+    "opencode": {"dir": ".opencode", "rules_ext": ".md"},
     "codex":    {"dir": ".codex",    "rules_ext": None},
 }
 

@@ -96,7 +96,7 @@ Claude Code has **native Agent Skills** (`.claude/skills/<name>/SKILL.md`), fold
 - **Loading**: progressive disclosure — the `name`+`description` frontmatter is always available; the SKILL.md body loads when Claude determines the skill is relevant or the user invokes it. ✅
 - **Invocation**: model-driven (auto when relevant) or via the Skill tool / a command that targets it.
 - **Naming constraints**: skill directory name == frontmatter `name`; the entry file MUST be `SKILL.md`. gald3r uses `g-skl-<name>`.
-- **Shared location**: `.claude/skills/` is also consumed by MiMo-Code and GitHub Copilot installs — the broadest skill location in the ecosystem. Keep content platform-neutral.
+- **Shared location**: `.claude/skills/` is also consumed by OpenCode and GitHub Copilot installs — the broadest skill location in the ecosystem. Keep content platform-neutral.
 
 ---
 

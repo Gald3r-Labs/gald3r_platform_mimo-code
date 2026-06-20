@@ -112,7 +112,7 @@ Only runs after explicit user approval in Phase 3. Actions:
   is self-contained.
 - Platform parity is intentional: an agent that exists only in
   `.cursor/` is effectively unhired for users on Claude Code, Codex,
-  MiMo-Code, etc. The default target set is "every platform that supports
+  OpenCode, etc. The default target set is "every platform that supports
   the `agents/` primitive" as declared in
   `.gald3r_sys/_platform_capabilities.json`.
 - Estimated context-impact band should be conservative — `medium`

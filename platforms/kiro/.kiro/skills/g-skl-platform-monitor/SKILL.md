@@ -14,7 +14,7 @@ validating platform config, or (re)generating `PLATFORM_STATUS.md` /
 ## The 23 Platforms
 
 `cursor`, `claude`, `copilot`, `codex`, `antigravity`, `windsurf`, `gemini`, `cline`, `roo`,
-`mimocode`, `openhands`, `kiro`, `aider`, `augment`, `goose`, `junie`, `kiro-cli`, `mistral`,
+`opencode`, `openhands`, `kiro`, `aider`, `augment`, `goose`, `junie`, `kiro-cli`, `mistral`,
 `openclaw`, `qwen`, `replit`, `subq`, `warp`.
 
 Reference implementation = `g-skl-platform-cursor`. Source-of-truth per platform =

@@ -34,7 +34,7 @@ Reference examples (with companion `hook.md`): `hooks/g-hk-pre-skill-timing.ps1`
 
 ## What it creates
 
-For each gald3r IDE target (`.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.mimocode/`):
+For each gald3r IDE target (`.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.opencode/`):
 
 1. `<ide>/hooks/<hook-name>.ps1` — PowerShell skeleton (Cursor / Claude hook contract on stdin / stdout, exit-code based BLOCK / ALLOW, idempotency guard pattern from T839 when appropriate).
 2. `<ide>/hooks/<hook-name>.md` — companion self-description with the canonical 5-section template (see below).
@@ -78,7 +78,7 @@ After scaffolding, offer to regenerate `PRODUCT_SYSTEMS.md`:
 ## After scaffolding
 
 1. Implement the hook body in `.cursor/hooks/<hook-name>.ps1` (canonical).
-2. Mirror to `.claude/`, `.agent/`, `.codex/`, `.mimocode/` (the scaffold step does this automatically; subsequent edits use `custom_scripts/platform_parity_sync.ps1`).
+2. Mirror to `.claude/`, `.agent/`, `.codex/`, `.opencode/` (the scaffold step does this automatically; subsequent edits use `custom_scripts/platform_parity_sync.ps1`).
 3. Update the `hook.md` `## Side Effects` and `## Related Tasks` sections to match the final implementation.
 4. Add an entry to `CHANGELOG.md` under `### Added` per `g-rl-26`.
 5. Run the hook directly to verify the JSON contract and exit-code behavior.

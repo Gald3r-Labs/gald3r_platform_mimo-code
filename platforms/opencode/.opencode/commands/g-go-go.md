@@ -89,13 +89,13 @@ The autopilot maintains a single run-state marker that the stop hook reads. The 
 
 1. **At INIT** — write the marker with the run config:
    ```json
-   { "active": true, "platform": "mimocode",
+   { "active": true, "platform": "opencode",
      "iter": 0, "budget_remaining": 12,
      "authorized_hard_stop": "", "reinvoke_count": 0,
      "updated_at": "<iso-8601>",
      "completed_iterations": [] }
    ```
-   Set `"platform"` to `"mimocode"` (matches the value the stop hook detects from
+   Set `"platform"` to `"opencode"` (matches the value the stop hook detects from
    its script location). The `session_id` field is NOT written at INIT; the stop
    hook captures it on the first stop via the stop-event stdin payload
    (first-touch registration). Stops from a different platform or session are
@@ -175,7 +175,7 @@ If inbox is empty: exits 0, no output, no commit — continue immediately.
 Before each loop iteration claims work, run the re-callable PCAC inbox check:
 
 ```powershell
-$hook = @( ".cursor\hooks\g-hk-pcac-inbox-check.ps1", ".claude\hooks\g-hk-pcac-inbox-check.ps1", ".agent\hooks\g-hk-pcac-inbox-check.ps1", ".codex\hooks\g-hk-pcac-inbox-check.ps1", ".mimocode\hooks\g-hk-pcac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
+$hook = @( ".cursor\hooks\g-hk-pcac-inbox-check.ps1", ".claude\hooks\g-hk-pcac-inbox-check.ps1", ".agent\hooks\g-hk-pcac-inbox-check.ps1", ".codex\hooks\g-hk-pcac-inbox-check.ps1", ".opencode\hooks\g-hk-pcac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
 if ($hook) { powershell -NoProfile -ExecutionPolicy Bypass -File $hook -ProjectRoot . -BlockOnConflict }
 ```
 

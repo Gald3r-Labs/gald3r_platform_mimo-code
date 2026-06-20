@@ -266,12 +266,12 @@ Per C-009, this skill exists in all 10 IDE targets:
 - `.claude/skills/g-skl-release/SKILL.md`
 - `.agent/skills/g-skl-release/SKILL.md`
 - `.codex/skills/g-skl-release/SKILL.md`
-- `.mimocode/skills/g-skl-release/SKILL.md`
+- `.opencode/skills/g-skl-release/SKILL.md`
 - `<ECOSYSTEM_ROOT>/<template_full>/.cursor/skills/g-skl-release/SKILL.md` ← canonical source
 - `<ECOSYSTEM_ROOT>/<template_full>/.claude/skills/g-skl-release/SKILL.md`
 - `<ECOSYSTEM_ROOT>/<template_full>/.agent/skills/g-skl-release/SKILL.md`
 - `<ECOSYSTEM_ROOT>/<template_full>/.codex/skills/g-skl-release/SKILL.md`
-- `<ECOSYSTEM_ROOT>/<template_full>/.mimocode/skills/g-skl-release/SKILL.md`
+- `<ECOSYSTEM_ROOT>/<template_full>/.opencode/skills/g-skl-release/SKILL.md`
 
 Propagation: edit canonical copy first, then run `platform_parity_sync.ps1 -Sync` (or copy directly for skill-subdir additions — see D064).
 

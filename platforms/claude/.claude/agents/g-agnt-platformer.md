@@ -15,7 +15,7 @@ support **honest and maintained** rather than aspirational.
 ## The 23 Platforms
 
 `cursor`, `claude`, `copilot`, `codex`, `antigravity`, `windsurf`, `gemini`, `cline`,
-`roo`, `mimocode`, `openhands`, `kiro`, `aider`, `augment`, `goose`, `junie`, `kiro-cli`,
+`roo`, `opencode`, `openhands`, `kiro`, `aider`, `augment`, `goose`, `junie`, `kiro-cli`,
 `mistral`, `openclaw`, `qwen`, `replit`, `subq`, `warp`.
 
 Each (except `antigravity`, which has none yet — see T1465) has a

@@ -23,7 +23,7 @@ task: T1474
 
 Kilo Code is an **open-source** AI coding agent (vendor Kilo-Org / kilo.ai) that ships as a VS Code
 extension, a JetBrains plugin, a **CLI**, and a Cloud surface. The current extension/CLI was **rebuilt
-on the MiMo-Code v7 codebase** and adopts a new config convention: a central **`kilo.jsonc`** (JSONC)
+on the OpenCode v7 codebase** and adopts a new config convention: a central **`kilo.jsonc`** (JSONC)
 plus **`.kilo/`** directories — legacy **`.kilocode/`** paths are auto-migrated and remain backward
 compatible. **Five of the six** gald3r-relevant mechanisms are NATIVE and well-documented (commands,
 rules, agents, skills, MCP); only **lifecycle/event hooks are missing** (an open, unimplemented
@@ -119,7 +119,7 @@ Source: https://kilo.ai/docs/customize/agents-md
 
 - Kilo does **not** expose session lifecycle / event hooks. **GitHub Issue #5827** (opened 2026-02-12,
   status **OPEN**, no branches/PRs) requests exposing session lifecycle hooks for third-party tool
-  integration (similar to MiMo-Code); the author notes "Kilo does not expose session lifecycle events to
+  integration (similar to OpenCode); the author notes "Kilo does not expose session lifecycle events to
   external tools."
 - The only related capability is **`kilo export [sessionID]`** for **post-hoc** data export — not
   real-time event hooks. No `PreToolUse` / `SessionStart` / pre-commit script-hook system is documented.
@@ -188,7 +188,7 @@ hook layer.
 - **`AGENTS.md`, not `CLAUDE.md`** — gald3r's `CLAUDE.md` is ignored; use `AGENTS.md` (root + subdir
   cascade, subdir wins).
 - **Config convention**: `kilo.jsonc` (JSONC) is the central config; `.kilo/` replaces legacy
-  `.kilocode/` with automatic migration + backward compatibility. Built on the **MiMo-Code v7** codebase.
+  `.kilocode/` with automatic migration + backward compatibility. Built on the **OpenCode v7** codebase.
 - **Deprecations to respect**: Memory Bank → fold into `AGENTS.md`; Orchestrator Mode → auto-delegating
   full-tool agents.
 - **No hooks** — the one place Kilo diverges from a high-parity platform; do not assume a hook surface.

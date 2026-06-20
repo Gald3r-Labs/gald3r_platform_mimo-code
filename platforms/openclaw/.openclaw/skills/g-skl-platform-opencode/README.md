@@ -1,14 +1,14 @@
 ---
 subsystem_memberships: [PLATFORM_INTEGRATION]
 ---
-# g-skl-platform-mimocode
+# g-skl-platform-opencode
 **Skill file**: `SKILL.md`
 
 > Human-facing companion to `SKILL.md`. The LLM agent reads `SKILL.md`; this page is for developers browsing the skill library.
 
 ## What it does
 
-Authoritative reference for MiMo-Code (sst.dev) customization in gald3r projects. Covers .mimocode/ folder layout, mimocode.json config, skills auto-discovery from .claude/skills/, commands, and install verification.
+Authoritative reference for OpenCode (sst.dev) customization in gald3r projects. Covers .opencode/ folder layout, opencode.json config, skills auto-discovery from .claude/skills/, commands, and install verification.
 
 ## When to use
 

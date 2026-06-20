@@ -121,11 +121,11 @@ See `PLATFORM_SPEC.md` §6 for the full verified event/hook table.
 
 ## Comparison to Other Platforms
 
-| Feature | Cursor | Claude Code | Gemini (.agent) | Codex | MiMo-Code |
+| Feature | Cursor | Claude Code | Gemini (.agent) | Codex | OpenCode |
 |---------|--------|-------------|-----------------|-------|----------|
 | Rules format | `.mdc` | `.md` | `.md` | via AGENTS.md | `.md` |
 | Command prefix | `@` | `/` | `/` | via AGENTS.md | `/` |
 | Agents folder | ✅ `agents/` | ✅ `agents/` | ❌ uses `workflows/` | ❌ via config.toml | ✅ `agents/` |
 | Hooks | ✅ Full | ✅ Full | ✅ Full | ❌ None | ❌ None |
 | Skills | ✅ | ✅ | ✅ | ✅ | via AGENTS.md |
-| MCP config | `.cursor/mcp.json` | `.claude/settings.json` | `mcp_config.json` | `config.toml` | `mimocode.json` |
+| MCP config | `.cursor/mcp.json` | `.claude/settings.json` | `mcp_config.json` | `config.toml` | `opencode.json` |

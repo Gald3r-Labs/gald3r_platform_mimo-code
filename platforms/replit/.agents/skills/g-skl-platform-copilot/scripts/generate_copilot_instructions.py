@@ -158,9 +158,9 @@ def main(argv: Optional[List[str]] = None) -> int:
   This file carries gald3r always-apply rules into GitHub Copilot sessions.
   Regenerate after modifying rules: python scripts/generate_copilot_instructions.py
 
-  gald3r — AI Development System for Cursor, Claude Code, Gemini, Codex, MiMo-Code, and GitHub Copilot
+  gald3r — AI Development System for Cursor, Claude Code, Gemini, Codex, OpenCode, and GitHub Copilot
   Supported IDEs: Cursor (.cursor/), Claude Code (.claude/), Gemini (.agent/),
-                  Codex (.codex/), MiMo-Code (.mimocode/), GitHub Copilot (.copilot/)
+                  Codex (.codex/), OpenCode (.opencode/), GitHub Copilot (.copilot/)
 -->
 
 # gald3r System Instructions for GitHub Copilot

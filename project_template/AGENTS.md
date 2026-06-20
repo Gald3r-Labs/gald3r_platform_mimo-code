@@ -2,7 +2,7 @@
 # agents.md - {project_name}
 
 > This file follows the agents.md format for AI agent instructions.
-> Compatible with Cursor (`.cursor/`), Claude Code (`.claude/`), Gemini (`.agent/`), Codex (`.codex/`), and MiMo-Code (`.mimocode/`).
+> Compatible with Cursor (`.cursor/`), Claude Code (`.claude/`), Gemini (`.agent/`), Codex (`.codex/`), and OpenCode (`.opencode/`).
 > Run `@g-setup` to initialize gald3r and auto-fill the placeholders below.
 
 ---
@@ -45,7 +45,7 @@
 .claude/                 # Claude Code (same content as .cursor/)
 .agent/                  # Gemini / Antigravity
 .codex/                  # Codex
-.mimocode/               # MiMo-Code
+.opencode/               # OpenCode
 ```
 
 ---
@@ -177,7 +177,7 @@ Vault operations should use `g-skl-vault` and `g-skl-knowledge-refresh`.
 This project is both a live gald3r workspace and a source of installable framework files.
 
 - Reusable framework content must preserve self-hosting parity between the live project and the shipped templates
-- The parity target set is 10 IDE trees: `.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.mimocode/`, `templates/.cursor/`, `templates/.claude/`, `templates/.agent/`, `templates/.codex/`, `templates/.mimocode/`
+- The parity target set is 10 IDE trees: `.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.opencode/`, `templates/.cursor/`, `templates/.claude/`, `templates/.agent/`, `templates/.codex/`, `templates/.opencode/`
 - Template install files also belong to the parity surface: `templates/.gald3r/`, `templates/.project_template/`, `templates/AGENTS.md`, `templates/CLAUDE.md`, `templates/GEMINI.md`, `templates/.gitignore`
 - Reusable changes flow both directions between root and `templates/`; local or proprietary workspace content stays out of `templates/`
 - Root and template IDE trees must remain independent real copies, never symlinks or junctions
@@ -226,8 +226,8 @@ bucket is editing. File-lock manifests enforce this (T1059):
 
 ## gald3r Version
 
-**gald3r version**: 2.0.1
-**Supported IDEs**: Cursor, Claude Code, Gemini, Codex, MiMo-Code
+**gald3r version**: 2.1.0
+**Supported IDEs**: Cursor, Claude Code, Gemini, Codex, OpenCode
 
 ---
 
@@ -273,7 +273,7 @@ Read `.gald3r/CONSTRAINTS.md` — load all constraints into active context. Cons
 After completing any task, always offer a git commit before ending the response.
 
 ### .gald3r/ Folder Gate
-Never read or write `.gald3r/` files without following the appropriate skill workflow. Use `g-skl-tasks` for task operations, `g-skl-qa` for bugs, `g-skl-plan` for planning files.
+Never read or write `.gald3r/` files without following the appropriate skill workflow. Use `g-skl-tasks` for task operations, `g-skl-qa` for bugs, `g-skl-plan` for planning files. Tasks are filed by status into `tasks/<status>/` subfolders — notably, paused tasks live in `tasks/paused/`.
 
 ### Documentation Placement
 All `.md` documentation files go in `docs/` — never in the project root. Exceptions: `AGENTS.md`, `README.md`, `LICENSE`, `CLAUDE.md`, `CHANGELOG.md`, `GEMINI.md`, `GUARDRAILS.md`.

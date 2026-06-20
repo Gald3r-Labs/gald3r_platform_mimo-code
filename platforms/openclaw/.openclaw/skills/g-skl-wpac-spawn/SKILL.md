@@ -69,7 +69,7 @@ Before doing anything, validate:
 □ If --features: the specified path exists and contains at least one .md file
 □ If --code: the specified path exists
 □ relationship (--sibling/--child/--parent) is specified
-□ Template source has .gitignore and mimocode.json (warn if missing, use inline defaults)
+□ Template source has .gitignore and opencode.json (warn if missing, use inline defaults)
 □ Workspace-Control member-repo guard (BUG-021 / Task 213 / g-rl-36)
 ```
 
@@ -213,7 +213,7 @@ both unavailable.
   - Copy `.claude/skills/` from the current project `.claude/skills/` (all PCAC and core skills)
   - Copy `AGENTS.md`, `CLAUDE.md` from the appropriate template or the current project root
   - Copy `.gitignore` from the appropriate template (contains gald3r-standard ignore section with section markers)
-  - Copy `mimocode.json` from the appropriate template (enables MiMo-Code IDE rule discovery)
+  - Copy `opencode.json` from the appropriate template (enables OpenCode IDE rule discovery)
 
 **In both cases**, create `.gald3r/.identity`:
 ```
@@ -228,7 +228,7 @@ repos_location=<copy from current project's .identity>
 
 **In both cases**, also ensure the following root files are present (copy from template if not already handled above):
 - `.gitignore` — gald3r-standard ignore patterns; uses section markers (`# <!-- gald3r GITIGNORE SECTION -->`) so user additions survive upgrades. Prevents `.gald3r/`, `.env`, `__pycache__`, and other generated files from being committed.
-- `mimocode.json` — enables MiMo-Code IDE to discover rules. Without it, the spawned project is invisible to MiMo-Code.
+- `opencode.json` — enables OpenCode IDE to discover rules. Without it, the spawned project is invisible to OpenCode.
 
 ### Step 4 — Seed with passed description
 
@@ -447,7 +447,7 @@ Next steps:
 | Symlink detection fails | Default to "copy" style (safe fallback) |
 | Git init fails | Warn but continue — git can be initialized manually |
 | `.gitignore` not found in template | Write a minimal inline default with gald3r section markers: `.gald3r/`, `.env`, `__pycache__/`, `*.py[cod]`, `node_modules/`, `.DS_Store` |
-| `mimocode.json` not found in template | Write inline default: `{"$schema":"https://mimo.xiaomi.com/config.json","instructions":["AGENTS.md","GUARDRAILS.md",".cursor/rules/*.mdc"]}` |
+| `opencode.json` not found in template | Write inline default: `{"$schema":"https://opencode.ai/config.json","instructions":["AGENTS.md","GUARDRAILS.md",".cursor/rules/*.mdc"]}` |
 
 ---
 

@@ -2,7 +2,7 @@
 
 MVP: the `tasks` vertical slice. The engine reads/writes the existing `.gald3r/`
 markdown formats so it is drop-in compatible with the markdown-driven system that
-Cursor / Claude Code / MiMo-Code / etc. already use. It makes no LLM calls and
+Cursor / Claude Code / OpenCode / etc. already use. It makes no LLM calls and
 assumes nothing about its caller — the same core is reused by the CLI, the MCP
 server, and (later) the HTTP backend and the Mode-B harness.
 """

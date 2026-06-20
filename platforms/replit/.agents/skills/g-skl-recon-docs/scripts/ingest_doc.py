@@ -94,8 +94,8 @@ def infer_platform_from_url(url: str) -> str:
         return "openai"
     if "google.dev" in u or "ai.google" in u or "gemini" in u:
         return "gemini"
-    if "mimo.xiaomi.com/mimocode" in u or "mimocode" in urlparse(url).netloc.lower():
-        return "mimocode"
+    if "opencode.ai" in u or "opencode" in urlparse(url).netloc.lower():
+        return "opencode"
     host = urlparse(url).netloc.lower().split(":")[0]
     if not host:
         return "docs"

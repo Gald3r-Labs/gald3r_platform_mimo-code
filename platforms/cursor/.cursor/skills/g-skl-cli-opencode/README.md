@@ -1,14 +1,14 @@
 ---
 subsystem_memberships: [PLATFORM_INTEGRATION]
 ---
-# g-skl-cli-mimocode
+# g-skl-cli-opencode
 **Skill file**: `SKILL.md`
 
 > Human-facing companion to `SKILL.md`. The LLM agent reads `SKILL.md`; this page is for developers browsing the skill library.
 
 ## What it does
 
-MiMo-Code CLI (opencode command) — stub. MiMo-Code is an emerging AI coding tool from sst.dev. Full documentation pending stable release.
+OpenCode CLI (opencode command) — stub. OpenCode is an emerging AI coding tool from sst.dev. Full documentation pending stable release.
 
 ## When to use
 

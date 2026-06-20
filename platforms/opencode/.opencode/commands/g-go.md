@@ -127,7 +127,7 @@ Supported template variables (resolved at coordinator dispatch time, never insid
 
 ### Hook contract
 
-The coordinator looks for the following optional PowerShell scripts in the active IDE hooks folder (first match wins across `.claude/hooks/`, `.cursor/hooks/`, `.agent/hooks/`, `.codex/hooks/`, `.copilot/hooks/`, `.mimocode/hooks/`):
+The coordinator looks for the following optional PowerShell scripts in the active IDE hooks folder (first match wins across `.claude/hooks/`, `.cursor/hooks/`, `.agent/hooks/`, `.codex/hooks/`, `.copilot/hooks/`, `.opencode/hooks/`):
 
 | Hook script | Fires when | Coordinator-passed arguments |
 |-------------|-----------|-----------------------------|
@@ -145,7 +145,7 @@ $hook = @(
   ".agent\hooks\g-hk-on-bucket-start.ps1",
   ".codex\hooks\g-hk-on-bucket-start.ps1",
   ".copilot\hooks\g-hk-on-bucket-start.ps1",
-  ".mimocode\hooks\g-hk-on-bucket-start.ps1"
+  ".opencode\hooks\g-hk-on-bucket-start.ps1"
 ) | Where-Object { Test-Path $_ } | Select-Object -First 1
 if ($hook) {
   powershell -NoProfile -ExecutionPolicy Bypass -File $hook `
@@ -167,7 +167,7 @@ This command defines the contract. Concrete hook scripts (e.g. "post bucket-comp
 
 ## Provider-Agnostic Adapter Pattern (T1175)
 
-`g-go` does not own model selection — by design. The gald3r framework is a **prompt orchestrator**: it routes work, partitions buckets, gates safety, and writes shared state, but the actual LLM call is delegated to the host IDE harness (Claude Code, Cursor, Codex, Gemini, MiMo-Code, Copilot). The provider-agnostic abstraction in gald3r is the `--mode` flag combined with the per-task `preferred_model:` field — see "Model-Tier Selection" below.
+`g-go` does not own model selection — by design. The gald3r framework is a **prompt orchestrator**: it routes work, partitions buckets, gates safety, and writes shared state, but the actual LLM call is delegated to the host IDE harness (Claude Code, Cursor, Codex, Gemini, OpenCode, Copilot). The provider-agnostic abstraction in gald3r is the `--mode` flag combined with the per-task `preferred_model:` field — see "Model-Tier Selection" below.
 
 **The adapter surface, in concrete terms:**
 
@@ -905,7 +905,7 @@ Before task claiming, implementation, verification, planning, or swarm partition
 If WPAC is configured, run the re-callable inbox check when the hook exists:
 
 ```powershell
-$hook = @( ".cursor\hooks\g-hk-wpac-inbox-check.ps1", ".claude\hooks\g-hk-wpac-inbox-check.ps1", ".agent\hooks\g-hk-wpac-inbox-check.ps1", ".codex\hooks\g-hk-wpac-inbox-check.ps1", ".mimocode\hooks\g-hk-wpac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
+$hook = @( ".cursor\hooks\g-hk-wpac-inbox-check.ps1", ".claude\hooks\g-hk-wpac-inbox-check.ps1", ".agent\hooks\g-hk-wpac-inbox-check.ps1", ".codex\hooks\g-hk-wpac-inbox-check.ps1", ".opencode\hooks\g-hk-wpac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
 if ($hook) { powershell -NoProfile -ExecutionPolicy Bypass -File $hook -ProjectRoot . -BlockOnConflict }
 ```
 
@@ -1628,7 +1628,7 @@ stops new claims cleanly; in-flight work finishes and the pipeline writes its su
 
 Swarm lifecycle hooks (`g-hk-on-bucket-start.ps1`, `g-hk-on-bucket-complete.ps1`,
 `g-hk-on-bucket-error.ps1`) are discovered automatically when present in `.cursor/hooks/`,
-`.claude/hooks/`, `.agent/hooks/`, `.codex/hooks/`, `.copilot/hooks/`, or `.mimocode/hooks/`.
+`.claude/hooks/`, `.agent/hooks/`, `.codex/hooks/`, `.copilot/hooks/`, or `.opencode/hooks/`.
 Hook scripts are read-only observers (logging, notification, metrics); they MUST NOT mutate
 `.gald3r/` state or git state. See "Swarm Lifecycle Hooks" above for the parameter contract.
 

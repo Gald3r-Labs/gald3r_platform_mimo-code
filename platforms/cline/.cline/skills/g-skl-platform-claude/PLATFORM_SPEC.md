@@ -119,7 +119,7 @@ policy paths per OS). It loads at the start of **every** session as persistent c
   dynamic context injection (`` !`cmd` `` inlines command output). Supporting files allowed in the
   skill dir; live change detection within a session.
 - gald3r `g-skl-*/SKILL.md` load natively (folder-per-skill). `.claude/skills/` is also consumed by
-  MiMo-Code and Copilot installs — keep content platform-neutral.
+  OpenCode and Copilot installs — keep content platform-neutral.
 - Source: https://code.claude.com/docs/en/skills
 
 ## 5. Commands / Workflows — ✅ NATIVE

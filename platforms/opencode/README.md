@@ -1,14 +1,14 @@
-# mimo.xiaomi.com/mimocode Platform Template
+# opencode.ai Platform Template
 
 **Tier 1 - Fully Supported**
 
-This folder is a complete, ready-to-deploy gald3r template targeted at **mimo.xiaomi.com/mimocode**.
+This folder is a complete, ready-to-deploy gald3r template targeted at **opencode.ai**.
 
 ## What this is
 
 A pre-built gald3r template containing all hooks, rules, skills, commands, and agents
-configured for the mimo.xiaomi.com/mimocode AI coding tool. Drop this folder's contents into your project
-root and run the bootstrap to get a fully wired gald3r setup tuned for mimo.xiaomi.com/mimocode.
+configured for the opencode.ai AI coding tool. Drop this folder's contents into your project
+root and run the bootstrap to get a fully wired gald3r setup tuned for opencode.ai.
 
 ## How to install
 

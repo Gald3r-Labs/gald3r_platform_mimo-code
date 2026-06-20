@@ -1,8 +1,8 @@
 {
-    "$schema":  "https://mimo.xiaomi.com/config.json",
+    "$schema":  "https://opencode.ai/config.json",
     "instructions":  [
                          "AGENTS.md",
                          "GUARDRAILS.md",
-                         ".mimocode/rules/*.md"
+                         ".opencode/rules/*.md"
                      ]
 }

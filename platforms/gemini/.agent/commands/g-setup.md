@@ -19,7 +19,7 @@ Before doing anything else, detect whether this project has a `.gald3r_sys/` fol
 
 ### Case A: `.gald3r_sys/` EXISTS (gald3r already installed)
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File setup_gald3r_project.ps1 -Platform auto
+python setup_gald3r_project.py --platform auto
 ```
 This regenerates the current platform's dirs from `.gald3r_sys/`. Proceed to Step 1.
 
@@ -45,7 +45,7 @@ Ask the user which IDE they primarily use if it cannot be auto-detected:
 2. **Claude Code** (CLI) → `claude`
 3. **Gemini / Antigravity** → `agent`
 4. **OpenAI Codex CLI** → `codex`
-5. **MiMo-Code (sst.dev)** → `mimocode`
+5. **OpenCode (sst.dev)** → `opencode`
 6. **GitHub Copilot** → `copilot`
 
 Most users will use 1–2 platforms. Install only those to keep the project clean.

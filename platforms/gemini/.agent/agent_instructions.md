@@ -40,7 +40,7 @@ This is the most confusing structural difference. In Cursor and Claude Code, spe
 
 **Why this difference exists**: Antigravity's agent model is workflow-first. The IDE is built around planning and executing workflows, not just calling pre-defined agents. A "workflow" in Gemini is a slash-command that can include `// turbo` annotations for auto-execution steps.
 
-**Important**: Workflow files are named `g-*.md` (e.g., `g-setup.md`) so they invoke cleanly as `/g-setup` — the same slash command users already know from Claude Code and MiMo-Code. The `workflows/` folder location is enough to distinguish them from `commands/` when working on the system internally. You do not need to type a different prefix to use them.
+**Important**: Workflow files are named `g-*.md` (e.g., `g-setup.md`) so they invoke cleanly as `/g-setup` — the same slash command users already know from Claude Code and OpenCode. The `workflows/` folder location is enough to distinguish them from `commands/` when working on the system internally. You do not need to type a different prefix to use them.
 
 ### GEMINI.md Auto-Loading
 `GEMINI.md` in the project root is Antigravity's project instruction file (equivalent to `CLAUDE.md`). It supplements `AGENTS.md` with Gemini-specific configuration.
@@ -123,7 +123,7 @@ A: Those are legacy v2 workflow files. In v3 (sequential task IDs), phases are n
 
 ## Comparison to Other Platforms
 
-| Feature | Gemini (.agent) | Cursor | Claude Code | Codex | MiMo-Code |
+| Feature | Gemini (.agent) | Cursor | Claude Code | Codex | OpenCode |
 |---------|-----------------|--------|-------------|-------|----------|
 | Rules format | `.md` | `.mdc` | `.md` | via AGENTS.md | `.md` |
 | Command prefix | `/` | `@` | `/` | via AGENTS.md | `/` |

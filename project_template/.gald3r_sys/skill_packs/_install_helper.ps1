@@ -41,7 +41,7 @@ $platformsDir = "$galdSysRoot\.gald3r_sys\platforms"
 if (Test-Path $platformsDir) {
     $KNOWN_PLATFORMS = (Get-ChildItem $platformsDir -Directory).Name
 } else {
-    $KNOWN_PLATFORMS = @(".cursor", ".claude", ".agent", ".codex", ".mimocode", ".copilot")
+    $KNOWN_PLATFORMS = @(".cursor", ".claude", ".agent", ".codex", ".opencode", ".copilot")
 }
 
 function Get-ActivePlatforms([string]$ProjectRoot) {

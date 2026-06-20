@@ -435,7 +435,7 @@ The interactive flow can run either in-chat (the agent asks and the user answers
 ## File parity note
 
 This skill ships in:
-- Root: `.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.mimocode/` (5 targets)
+- Root: `.cursor/`, `.claude/`, `.agent/`, `.codex/`, `.opencode/` (5 targets)
 - `<ECOSYSTEM_ROOT>/<template_full>`: all 5 IDE directories
 - `<ECOSYSTEM_ROOT>/<template_adv>`: all 5 IDE directories
 

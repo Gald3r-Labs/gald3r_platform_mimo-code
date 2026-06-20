@@ -253,7 +253,7 @@ If WPAC is configured, run the re-callable WPAC inbox check when the hook exists
 > **Tool routing (BUG-031)**: on Windows, invoke this snippet through the **PowerShell tool**, not Bash. It uses PowerShell-only syntax (`@(...)` array, `Where-Object`, `Test-Path`, `Select-Object`, pipeline). Routing it through Bash produces a parse error such as ``syntax error near unexpected token `('`` — that failure is a tool-selection error, **NOT** a real WPAC conflict gate. Re-run via PowerShell. On Linux/macOS hosts use `pwsh` if available; if neither shell can reach the hook, treat the gate as advisory and let Workspace-Control routing re-evaluate.
 
 ```powershell
-$hook = @( ".cursor\hooks\g-hk-wpac-inbox-check.ps1", ".claude\hooks\g-hk-wpac-inbox-check.ps1", ".agent\hooks\g-hk-wpac-inbox-check.ps1", ".codex\hooks\g-hk-wpac-inbox-check.ps1", ".mimocode\hooks\g-hk-wpac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
+$hook = @( ".cursor\hooks\g-hk-wpac-inbox-check.ps1", ".claude\hooks\g-hk-wpac-inbox-check.ps1", ".agent\hooks\g-hk-wpac-inbox-check.ps1", ".codex\hooks\g-hk-wpac-inbox-check.ps1", ".opencode\hooks\g-hk-wpac-inbox-check.ps1" ) | Where-Object { Test-Path $_ } | Select-Object -First 1
 if ($hook) { powershell -NoProfile -ExecutionPolicy Bypass -File $hook -ProjectRoot . -BlockOnConflict }
 ```
 

@@ -1,5 +1,5 @@
 ﻿---
-gald3r_rel_version: "2.0.1"
+gald3r_rel_version: "2.1.0"
 schema_version: "generic-v1"
 ---
 # gald3r Vocabulary & Abbreviations
@@ -15,7 +15,7 @@ Add entries with `@g-vocab-add "ABBR = expansion — context"` or edit this file
 
 | Abbreviation | Full Expansion | Context |
 |---|---|---|
-| `CRASH` | **C**ommands, **R**ules, **A**gents, **S**kills, **H**ooks — all contents of a platform folder (`.cursor`, `.claude`, `.agent`, `.codex`, `.mimocode`, `.copilot`, etc.) | gald3r platform folder structure |
+| `CRASH` | **C**ommands, **R**ules, **A**gents, **S**kills, **H**ooks — all contents of a platform folder (`.cursor`, `.claude`, `.agent`, `.codex`, `.opencode`, `.copilot`, etc.) | gald3r platform folder structure |
 
 ---
 

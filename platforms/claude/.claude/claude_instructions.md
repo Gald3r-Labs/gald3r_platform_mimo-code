@@ -151,11 +151,11 @@ assume a Cursor `hooks.json` entry fires identically on Claude Code.
 
 ## Comparison to Other Platforms
 
-| Feature | Claude Code | Cursor | Gemini (.agent) | Codex | MiMo-Code |
+| Feature | Claude Code | Cursor | Gemini (.agent) | Codex | OpenCode |
 |---------|-------------|--------|-----------------|-------|----------|
 | Rules format | `.md` | `.mdc` | `.md` | via AGENTS.md | `.md` |
 | Command prefix | `/` | `@` | `/` | via AGENTS.md | `/` |
 | Agents folder | ✅ `agents/` | ✅ `agents/` | ❌ uses `workflows/` | ❌ via config.toml | ✅ `agents/` |
 | Hooks | ✅ Full + extra events | ✅ Full | ✅ Full | ❌ None | ❌ None |
 | Skills | ✅ | ✅ | ✅ | ✅ | via AGENTS.md |
-| MCP config | `settings.json` | `.cursor/mcp.json` | `mcp_config.json` | `config.toml` | `mimocode.json` |
+| MCP config | `settings.json` | `.cursor/mcp.json` | `mcp_config.json` | `config.toml` | `opencode.json` |

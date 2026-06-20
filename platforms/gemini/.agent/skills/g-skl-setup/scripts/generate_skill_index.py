@@ -8,7 +8,7 @@ The SKILL_INDEX.md file is a one-line-per-skill catalogue that lets agents
 discover skills without loading their full bodies. The script:
   1. Walks .cursor/skills/g-skl-* for SKILL.md files
   2. Parses frontmatter `name:` and `description:` (plain and folded `>-` forms)
-  3. Emits SKILL_INDEX.md to .cursor/, .claude/, .agent/, .codex/, .mimocode/
+  3. Emits SKILL_INDEX.md to .cursor/, .claude/, .agent/, .codex/, .opencode/
      skill folders
   4. Is idempotent - re-running on unchanged input yields unchanged output
 
@@ -53,7 +53,7 @@ def _bootstrap_engine() -> bool:
 _HAS_ENGINE = _bootstrap_engine()
 
 TARGET_DIRS = (".cursor/skills", ".claude/skills", ".agent/skills",
-               ".codex/skills", ".mimocode/skills")
+               ".codex/skills", ".opencode/skills")
 
 HEADER_LINES = (
     "# Skill Index -- gald3r-managed skills",

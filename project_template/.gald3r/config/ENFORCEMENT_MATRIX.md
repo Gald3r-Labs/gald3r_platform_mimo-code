@@ -1,5 +1,5 @@
 ﻿---
-gald3r_rel_version: "2.0.1"
+gald3r_rel_version: "2.1.0"
 schema_version: "generic-v1"
 title: gald3r Enforcement Matrix
 purpose: Audit-and-design surface for migrating hard-constraint rules from context-injected always-apply text (~70% agent compliance) to hooks (~100% mechanical enforcement).
@@ -107,7 +107,7 @@ Refusal messages reference the relevant rule path (`.claude/rules/g-rl-NN-...md`
 | Cursor (`.cursor/hooks.json`) | Cursor-style camelCase | ✅ | n/a | ✅ extended | shipped (preToolUse depends on Cursor harness firing it; Cursor's documented hook events do not include a write-time pre-tool-call as of late 2025 — see "Cross-platform footnote") |
 | Codex (`.codex/hooks/`) | scripts present; no hooks.json | scripts callable manually | scripts callable manually | ✅ extended (script copied) | scripts-ready; harness wiring TBD |
 | Gemini / Antigravity (`.agent/hooks/`) | scripts present; no hooks.json | scripts callable manually | scripts callable manually | ✅ extended (script copied) | scripts-ready; harness wiring TBD |
-| MiMo-Code (`.mimocode/hooks/`) | no hooks.json (per learned fact #47 MiMo-Code has no native hooks) | n/a | n/a | ✅ extended (script copied for manual invocation) | scripts-only; documented gap |
+| OpenCode (`.opencode/hooks/`) | no hooks.json (per learned fact #47 OpenCode has no native hooks) | n/a | n/a | ✅ extended (script copied for manual invocation) | scripts-only; documented gap |
 | GitHub Copilot (`.copilot/`) | no hooks (per learned fact #49 Copilot Phase 1 has no hooks) | n/a | n/a | n/a | documented gap; Phase 2 awaits example_app public MCP URL |
 
 Cursor's documented hook events as of late 2025 are `sessionStart`, `stop`, `beforeShellExecution`, `beforeReadFile`, `beforeSubmitPrompt`, `beforeMCPExecution`, `afterFileEdit`. There is no documented `beforeFileWrite` event in Cursor — meaning Cursor's harness cannot today auto-refuse an `Edit`/`Write` tool call via these hooks. The `preToolUse` key in `.cursor/hooks.json` is forward-looking: if Cursor adds tool-arg introspection, the wiring is already in place. Until then, the same Cursor-side enforcement falls back to context-injected rules + the pre-commit extensions. Claude Code's `PreToolUse` event is the only platform-supported tool-arg-introspecting hook surface today.

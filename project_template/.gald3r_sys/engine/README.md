@@ -1,7 +1,7 @@
 # gald3r-engine
 
 The Python engine for gald3r — a **file-first agent OS** that the existing IDE
-harnesses (Claude Code, Cursor, MiMo-Code, …) plug into. **Mode A:** a pure,
+harnesses (Claude Code, Cursor, OpenCode, …) plug into. **Mode A:** a pure,
 deterministic core that reads/writes the existing `.gald3r/` markdown formats and
 makes **no LLM calls**. One core, exposed through a CLI today and an MCP server
 (the 34-platform unlock); an HTTP backend and a Mode-B harness reuse the same core later.

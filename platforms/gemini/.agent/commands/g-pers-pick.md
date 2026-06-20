@@ -31,5 +31,5 @@ g-pers-pick none          Uninstall current personality pack (no active personal
 ## Notes
 - All personality packs are fully swappable — including `gald3r_personality`
 - `fandom-skills` is skills-only; it does not conflict with a personality pack. Use `g-skill-pack-add` for it
-- `.codex`, `.mimocode` and other rule-free platforms only get skill files if the pack includes them
+- `.codex`, `.opencode` and other rule-free platforms only get skill files if the pack includes them
 - Restart your IDE session after switching for the new personality to load into context

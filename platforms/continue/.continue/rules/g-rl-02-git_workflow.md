@@ -45,7 +45,7 @@ Before every `git add` or `git commit`, verify NONE of these are staged:
 | `/.claude/` | Personal IDE config (gitignored) |
 | `/.codex/` | Personal IDE config (gitignored) |
 | `/.cursor/` | Personal IDE config (gitignored) |
-| `/.mimocode/` | Personal IDE config (gitignored) |
+| `/.opencode/` | Personal IDE config (gitignored) |
 | `/.gald3r/` | Live project state (gitignored) |
 | `/.project_template/` | Root-level template copy (gitignored) |
 | `/temp_docs/` | Scratch files (gitignored) |

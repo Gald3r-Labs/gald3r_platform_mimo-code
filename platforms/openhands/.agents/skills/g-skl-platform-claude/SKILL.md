@@ -62,7 +62,7 @@ continuation (`--continue`/`--resume`), and the Agent SDK (TS/Python) cover scri
 ```
 
 User-global tree at `~/.claude/` (CLAUDE.md, settings.json, agents/skills/commands); auto memory at
-`~/.claude/projects/<project>/memory/MEMORY.md`. `.claude/skills/` is also consumed by MiMo-Code and
+`~/.claude/projects/<project>/memory/MEMORY.md`. `.claude/skills/` is also consumed by OpenCode and
 Copilot → keep skill content platform-neutral.
 
 ## 3. gald3r Integration
@@ -100,7 +100,7 @@ Test-Path .mcp.json                                          # if using project-
 | Feature | Status | Notes |
 |---|---|---|
 | Hooks (`g-hk-*.ps1`) | ✅ | `settings.json` `"hooks"`; PascalCase events (SessionStart/PreToolUse/PostToolUse/Stop/…); `PreToolUse` blocks; `.ps1` supported |
-| Skills (`g-skl-*/SKILL.md`) | ✅ | agentskills.io; `.claude/skills/<name>/SKILL.md`; progressive disclosure; also read by MiMo-Code/Copilot |
+| Skills (`g-skl-*/SKILL.md`) | ✅ | agentskills.io; `.claude/skills/<name>/SKILL.md`; progressive disclosure; also read by OpenCode/Copilot |
 | Agents (`g-agnt-*.md`) | ✅ | native subagents `.claude/agents/` (md + YAML); built-in Explore/Plan/general-purpose; ~7 parallel |
 | Commands (`@g-*`) | ✅ | `.claude/commands/*.md` (legacy) OR `.claude/skills/<name>/SKILL.md` → `/<name>` |
 | Rules (`g-rl-*`) | ✅ | `CLAUDE.md` + `.claude/rules/*.md` (`paths:` glob) + auto memory; advisory (use `PreToolUse` for enforcement) |
